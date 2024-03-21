@@ -9,6 +9,24 @@
     {% for item in data %}
         <h3>{{ item.itemid }}) {{ item.item }}</h3>
     {% endfor %}
+
+    <h1>Add items here:</h1>
+    <form id="dataInput" method="post">
+        {% csrf_token %}
+        
+        <ol>
+            {% for item in data %}
+            <li>
+                <input type="checkbox" name="entry" value="{{item.itemid}}"/> 
+                {{ item.item }}
+            </li>
+            {% endfor %}
+        </ol>
+        
+    
+        {{ form.as_p }}
+        <button name="submit" type="submit" >Submit</button>
+    </form>
     
 </body>
 </html>
