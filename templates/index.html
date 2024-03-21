@@ -1,5 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="{% static 'styles.css' %}">
 <head>
     <meta charset="UTF-8">
     <title>Tech Exercise</title>
@@ -13,17 +15,17 @@
     <h1>Add items here:</h1>
     <form id="dataInput" method="post">
         {% csrf_token %}
-        
+
         <ol>
             {% for item in data %}
             <li>
-                <input type="checkbox" name="entry" value="{{item.itemid}}"/> 
+                <input type="checkbox" name="entry" value="{{item.itemid}}"/>
                 {{ item.item }}
             </li>
             {% endfor %}
         </ol>
-        
-    
+
+
         {{ form.as_p }}
         <button name="submit" type="submit" >Submit</button>
     </form>
