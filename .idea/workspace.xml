@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19623981-bc48-4ae4-aed4-da57f9b3e9da" name="Changes" comment="Implemented the add and delete functions to my to-do list application. I set it up so that the user pushes input to my code, which then pushes the input to my database, whether that be deletion or insertion. I have it set up so that my code will renumber the database according to a deletion or insertion. So far, I have only encountered errors after changing code; not when using the app normally. However, I'll keep my eye out for any errors. Now that most of the functions have been developed, the next step is to edit the html and possibly implement some CSS to make it &quot;pretty&quot;.">
-      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+    <list default="true" id="19623981-bc48-4ae4-aed4-da57f9b3e9da" name="Changes" comment="Added a CSS file to modify how index.html looks. Please excuse my use of comic sans, I thought it would be funny. That font will not be present anywhere in the final product, don't worry.">
+      <change afterPath="$PROJECT_DIR$/static/cool_meme.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techExercise/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/techExercise/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techExerciseProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/techExerciseProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "Python.manage.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
@@ -137,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710889619558</updated>
       <workItem from="1710889635223" duration="10640000" />
-      <workItem from="1710993471345" duration="15241000" />
+      <workItem from="1710993471345" duration="19651000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit. Added index.html as a default render with the pathing hostip:8000. For now I'll be using the loopback address for hostip for development.">
       <option name="closed" value="true" />
@@ -171,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711006493816</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added a CSS file to modify how index.html looks. Please excuse my use of comic sans, I thought it would be funny. That font will not be present anywhere in the final product, don't worry.">
+      <option name="closed" value="true" />
+      <created>1711052352170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711052352170</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,11 +201,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit. Added index.html as a default render with the pathing hostip:8000. For now I'll be using the loopback address for hostip for development." />
     <MESSAGE value="Connected my project to the mysql database hosted on my development computer (my laptop), named &quot;techexercise&quot;. Removed the sqlite3 file from the project." />
     <MESSAGE value="Added code to implement the ability to view the contents of my to-do list table in my database. This included adding a model, passing in the table contents as 'data' in view.py, then implementing a for loop to look at each row of the table one by one." />
     <MESSAGE value="Implemented the add and delete functions to my to-do list application. I set it up so that the user pushes input to my code, which then pushes the input to my database, whether that be deletion or insertion. I have it set up so that my code will renumber the database according to a deletion or insertion. So far, I have only encountered errors after changing code; not when using the app normally. However, I'll keep my eye out for any errors. Now that most of the functions have been developed, the next step is to edit the html and possibly implement some CSS to make it &quot;pretty&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the add and delete functions to my to-do list application. I set it up so that the user pushes input to my code, which then pushes the input to my database, whether that be deletion or insertion. I have it set up so that my code will renumber the database according to a deletion or insertion. So far, I have only encountered errors after changing code; not when using the app normally. However, I'll keep my eye out for any errors. Now that most of the functions have been developed, the next step is to edit the html and possibly implement some CSS to make it &quot;pretty&quot;." />
+    <MESSAGE value="Added a CSS file to modify how index.html looks. Please excuse my use of comic sans, I thought it would be funny. That font will not be present anywhere in the final product, don't worry." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a CSS file to modify how index.html looks. Please excuse my use of comic sans, I thought it would be funny. That font will not be present anywhere in the final product, don't worry." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/techExerciseProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1710899324747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -7,12 +7,7 @@
     <title>Tech Exercise</title>
 </head>
 <body>
-    <h1>To-Do</h1>
-    {% for item in data %}
-        <h3>{{ item.itemid }}) {{ item.item }}</h3>
-    {% endfor %}
-
-    <h1>Add items here:</h1>
+    <h1>To-Do List</h1>
     <form id="dataInput" method="post">
         {% csrf_token %}
 
@@ -24,11 +19,16 @@
             </li>
             {% endfor %}
         </ol>
-
-
+    
         {{ form.as_p }}
         <button name="submit" type="submit" >Submit</button>
     </form>
+
+    <h3>Instructions: If you would like to add an item to the to-do list, enter your item into the Item field and click
+    submit button. If you have completed an item, click the checkbox on that item and click the submit button. Both of 
+    these functions can work at the same time.</h3>
     
+    <img src="/static/cool_meme.jpeg" alt="meme image here" title="Figure 1.0: Cool Meme"/>
+
 </body>
 </html>
